@@ -9,7 +9,9 @@ import org.keycloak.models.KeycloakSessionFactory;
 import org.keycloak.provider.ProviderConfigProperty;
 
 import java.util.List;
+import com.google.auto.service.AutoService;
 
+@AutoService(AuthenticatorFactory.class)
 public class IdpRememberMeAuthenticatorFactory implements AuthenticatorFactory {
     public static final String PROVIDER_ID = "idp-remember-me";
 
